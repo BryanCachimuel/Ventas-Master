@@ -24,9 +24,5 @@
             </section>
         </div>
     </header>
-
-
-
-
 </body>
 </html>
