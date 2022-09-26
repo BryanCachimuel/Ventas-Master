@@ -1,6 +1,3 @@
-DROP DATABASE IF EXISTS ventas_master;
-CREATE DATABASE IF NOT EXISTS ventas_master;
-USE ventas_master;
 CREATE TABLE productos(
 	id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
 	codigo VARCHAR(255) NOT NULL,
@@ -28,12 +25,13 @@ CREATE TABLE productos_vendidos(
 	FOREIGN KEY(id_venta) REFERENCES ventas(id) ON DELETE CASCADE
 ) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE `users` (
-  `id` int(11) NOT NULL auto_increment,
-  `nombre` varchar(255) NOT NULL DEFAULT 'nombre',
-  `apellido` varchar(255) NOT NULL DEFAULT 'apellido',
-  `email` varchar(255) NOT NULL DEFAULT 'email',
-  `password` varchar(255) NOT NULL DEFAULT 'password',
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `updated_at` datetime NOT NULL DEFAULT current_timestamp()
+CREATE TABLE users (
+  id int(11) NOT NULL auto_increment,
+  nombre varchar(255) NOT NULL DEFAULT 'nombre',
+  apellido varchar(255) NOT NULL DEFAULT 'apellido',
+  email varchar(255) NOT NULL DEFAULT 'email',
+  password varchar(255) NOT NULL DEFAULT 'password',
+  created_at datetime NOT NULL DEFAULT current_timestamp(),
+  updated_at datetime NOT NULL DEFAULT current_timestamp(),
+  PRIMARY KEY(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
