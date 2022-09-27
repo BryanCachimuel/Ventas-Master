@@ -273,7 +273,7 @@ $codigoProd = $sentencia->fetchAll(PDO::FETCH_OBJ);
 															<td><?php echo "$".$producto->precioVenta ?></td>
 															<td><?php echo $producto->cantidad ?></td>
 															<td><?php echo "$".$producto->total ?></td>
-															<td><a class="btn btn-danger" href="<?php echo "quitarDelCarrito.php?indice=" . $indice?>"><i class="fa fa-trash"></i></a></td>
+															<td><a class="btn btn-danger" href="<?php echo "quitarDelCarrito.php?indice=" . $indice?>">Eliminar</a></td>
 														</tr>
 													<?php } ?>
 												</tbody>
