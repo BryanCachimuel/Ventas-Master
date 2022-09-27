@@ -13,13 +13,15 @@
 	 <header class="hero">
         <div class="container">
             <nav class="nav">
-                <a href="login.php" class="nav__items nav__items--cta">Iniciar Sessión</a>
+               
+                <a href="registrar.php" class="nav__items nav__items--cta">Registrar</a>
             </nav>
 
             <section class="hero__container">
                 <div class="hero__text">
                     <h1 class="hero__title">Sistema de Venta</h1>
                     <h2 class="hero__subtitle">Tienda de Barrio Ajavi Grande</h2>
+                    <a href="login.php" class="nav__items nav__items--cta">Iniciar Sessión</a>
                 </div>
             </section>
         </div>

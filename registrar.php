@@ -126,7 +126,7 @@ if(isset($_POST['submit']))
                 <div class="dashboard-ecommerce">
                     <div class="container-fluid dashboard-content ">
 
-
+                   
 
                         <div class="row">
                             <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7 mx-auto">
@@ -164,7 +164,7 @@ if(isset($_POST['submit']))
                                 <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>" class="formulario" >
 
                                     <div class="card mt-4">
-                                      <h2 class="card-header">Registro de Nuevo Cajero</h2>
+                                      <h2 class="card-header">Registro de Nuevo Usuario</h2>
                                       <div class="card-body">
                                           <div class="mb-3 row">
                                            <label class="col-sm-3 col-form-label" for="nombre"><i class="fas fa-user icon"></i> Nombres: </label>
@@ -204,6 +204,7 @@ if(isset($_POST['submit']))
 
 
                                        <button type="submit" name="submit" class="btn btn-primary mt-3">Registrarse</button>
+                                       <a href="index.php" class="btn btn-danger mt-3">Cancelar</a>
                                        <!--<p>¿Ya tienes una cuenta?<a class="link" href="login.php">Iniciar Sesion</a></p>-->
                                    </div>
                                       </div>
